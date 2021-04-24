@@ -1,25 +1,11 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema; 
 
-const ratingSchema = new Schema({
-    content: String,
-    rating: {
-        type: Number,
-        min: 1,
-        max: 10,
-        default: 10
-    }
-    },{ timestamps: true }
-);
-
 
 const carSchema = new Schema ({
-    carName: {
-        type: String
-},
-    origin: {
-        type: String
-},
+    carName: String,
+    origin: String,
+
     makingYear: {
     type: Date,
     default: function() {
@@ -27,15 +13,20 @@ const carSchema = new Schema ({
     }
 },
 
-Carcylinder: {
+carCylinder: {
     type: [String],
     min: 4,
-    max: 10
+    max: 10,
 },
 
-ratings: [ratingSchema] 
-}, {
-    timestamps: true
-});
+rating: {
+            type: Number,
+            min: 1,
+            max: 10,
+            default: 10
+        }
+        },{ timestamps: true }
+    );
+
 
  module.exports = mongoose.model('Car', carSchema);

@@ -14,8 +14,8 @@ function create(req, res) {
 
 
     if(req.body.carCylinder) {
-        req.body.cast = req.body.carCylinder.replace(/\s*, \s*/g, ',')
-        req.body.cast = req.body.carCylinder.split(',');
+        req.body.car = req.body.carCylinder.replace(/\s*, \s*/g, ',')
+        req.body.car = req.body.carCylinder.split(',');
     }
     for(let key in req.body) {
         if(req.body[key] === '') delete req.body[key];
