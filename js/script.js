@@ -20,10 +20,10 @@ function init() {
 function handleShowModal(){
     const carName= parseInt(this.dataset.carName);
     console.log(this.dataset);
-    const selectedCar = breweries.find(function(car){
+    const selectedCar = cars.find(function(car){
         return car.name === carName;
     });
-    console.log(selectedBrewery);
+    console.log(selectedCar);
 
 
 // add the content to the modal
@@ -52,7 +52,7 @@ function render() {
     const html = cars.map(function(car){
     
         return `
-        <article data-car-name="${brewery.name}" class="sort">
+        <article data-car-name="${car.name}" class="sort">
                 <h1>${car.name}</h1>
                 <p>${car.year}</p>
             </article>
