@@ -39,7 +39,7 @@ $('.modal').modal();
 
 function getData() {
     $.ajax(BASE_URL + "?limit=18")
-    .then(function (data){
+    .then(function render(cars){
         // console.log(data);
         cars = data;
         render();
@@ -48,7 +48,7 @@ function getData() {
     });
 }
 
-function render() {
+function render(cars) {
     const html = cars.map(function(car){
     
         return `
