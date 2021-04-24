@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema; 
 
-const reviewSchema = new Schema({
+const ratingSchema = new Schema({
     content: String,
     rating: {
         type: Number,
@@ -14,25 +14,26 @@ const reviewSchema = new Schema({
 
 
 const carSchema = new Schema ({
-    title: {
+    carName: {
         type: String
 },
-    makeYear: {
+    origin: {
+        type: String
+},
+    makingYear: {
     type: Date,
     default: function() {
-        const date = new Date();
-        date.setFullYear(date.getFullYear() + 1);
-        return date;
+        return new Date().getFullYear();
     }
 },
 
-carCylinder: {
+Carcylinder: {
     type: [String],
     min: 4,
     max: 10
 },
 
-reviews: [reviewSchema] 
+ratings: [ratingSchema] 
 }, {
     timestamps: true
 });

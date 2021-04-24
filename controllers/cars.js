@@ -11,7 +11,6 @@ function newCar(req, res) {
 }
 
 function create(req, res) {
-    req.body.origin = !!req.body.origin;
 
 
     if(req.body.carCylinder) {
@@ -21,7 +20,9 @@ function create(req, res) {
     for(let key in req.body) {
         if(req.body[key] === '') delete req.body[key];
     }
-    Car.create(req.body, function(err, flight) {
+    console.log('req.body', req.body)
+    
+    Car.create(req.body, function(err, car) {
         if(err) return res.redirect('/cars/new');
         res.redirect('/cars');
     });
