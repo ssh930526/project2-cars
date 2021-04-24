@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/css/style.css' />
+    <title>Your Favorite Cars | Add New Car</title>
+</head>
+<body>
+    <h1>Enter a new car</h1>
+    <form action="/cars" method="POST">
+        <label>Car Name:
+            <input type="text" name="carName">
+        </label>
+        <label>Making Year:
+            <input type="datetime" name="makingYear">
+        </label>
+            <label>Cylinders
+                <select name="Cylinders">
+                    <option value="4">4</option>
+                    <option value="6">6</option>
+                    <option value="8">8</option>
+                </select>
+            </label>
+        
+        <label> Origin:
+            <input type="text" name="Origin">
+        </label>
+        <label>Rating:
+        <select name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+
+        </select>
+    </label>
+        <input type="submit" value="Add Car">
+    </form>
+</body>
+</html>
