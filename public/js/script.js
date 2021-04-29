@@ -28,7 +28,7 @@ function getData() {
     $.ajax(BASE_URL)
     .then(function (data){
         console.log(typeof(data));
-        cars = JSON.parse(data).slice(0,18);
+        cars = JSON.parse(data).slice(0,21);
         render(cars);
     }, function (error) {
         console.log(error);
@@ -38,7 +38,7 @@ function render(cars) {
     const html = cars.map(function(car){
         return `
         <article data-car-name="${car.Name}" class="sort">
-                <h1>Car Name: ${car.Name}</h1>
+                <h2>Car Name: ${car.Name}</h2>
                 <p>Year: ${car.Year}</p>
                 <p>Origin: ${car.Origin}</p>
                 <p>Cylinder: ${car.Cylinders}</p>
