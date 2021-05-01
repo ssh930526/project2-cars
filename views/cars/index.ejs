@@ -13,9 +13,9 @@
     <img class="img3" src="https://mynobe.com/wp-content/uploads/2019/05/car.jpg">
 </a>
 <body>
-    <h1>Cars Ratings
-    </h1>
-    <table id="form">
+    <h4>Cars Ratings
+    </h4>
+    <table>
         <thead>
             <th>Car Name</th>
             <th>Making Year</th>
@@ -23,18 +23,21 @@
             <th>Origin</th>
             <th>Rating</th>
         </thead>
-        <tbody>
+        
+        <tbody class="infor">
+            
             <% cars.forEach(car => { %>
                 <tr>
                     <td><%= car.carName %></td>
-                    <td><%= car.makingYear %></td>
+                    <td><%= car.makingYear.toLocaleDateString() %></td>
                     <td><%= car.carCylinder %></td>
                     <td><%= car.origin %></td>
-                    <td><%= car.rating %></td>
+                    <td><%= car.rating %></td> 
 
                 </tr>
             <% }) %>
-            <a href="/">Back to View</a >
+            <a  class="back" href="/">Back to View</a >
+           
         </tbody>
     </table>
 </body>

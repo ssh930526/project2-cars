@@ -41,7 +41,7 @@ h1 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
     font-size: 60px;
     box-shadow: cadetblue;
-    padding-left: 550px;
+    padding-left: 500px;
 }
 .img1{
     position: absolute;
@@ -85,26 +85,83 @@ a{
 
 .img5{
       position: absolute;
-      top: 500px;
-      left: 830px;
-      height:50px;
-      width:50px;
-      border-radius: 50%;
+      top: 300px;
+      left: 530px;
+      border-style: none;
+      height: 500px;
+      width: 500px;
+      border-radius:10% 30% 50% 70%;
 }
 
 label {
-    background-color: #a1c9a2; /* Green */
+    background-color: #a1c9a2;
     border: none;
     color: white;
-    padding: 10px 32px ;
-    /* text-align: center; */
+    padding: 7px 32px 10px 32px;
     text-decoration:inherit;
     text-align:center;
     display: inline-block;
     font-size: 20px;
-    padding-top: 10px;
-    flex-direction: column;
-    position: relative;
     border-radius: 12px 12px 12px 12px;
   }
+.form{
+    text-align: center;
+    padding:100px;
+}
+
+.submit{
+    color:rgb(212, 115, 147);
+    border-color: rgb(230, 222, 118);
+    border-style: none;
+    text-shadow: 0.02cm;
+    font-size: 25px;
+    text-align: center;
+    padding: 0auto;
+    font-family: fantasy;
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 100px;
+    color: rgb(247, 230, 224);
+    padding-left: 70px;
+    font-style: italic;
+}
+
+.img3{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+    border-style: none;
+    height: 200px;
+    width: 200px;
+    border-radius: 10% / 50%;;
+}
+
+.back{
+    color:rgb(241, 183, 214);
+    position: relative;
+    font-family: cursive;
+    padding-top: 40px;
+    padding-left: 850px;
+    
+}
+
+table {
+    color: rgb(179, 185, 179);
+    padding-top: 100px;
+    padding-left: 10px;
+    font-size: 27px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+}
+
+.infor{
+    color: green;
+    font-family: fantasy;
+    font-size: 70px;
+    
+}
+
+
 
