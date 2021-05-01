@@ -1,7 +1,6 @@
 // Require modules
 const express = require('express');
 const morgan = require('morgan');
-const port = 3000; 
 const indexRouter = require('./routes/index');
 const carsRouter = require('./routes/cars');
 const port = process.env.PORT || 3000;
