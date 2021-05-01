@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 //mogoose app connect
+const connectionURL = process.env.DATABASE_URL;
 
 const connectionString = 'mongodb+srv://admin:abc1234@sei.ndsut.mongodb.net/mongoose-cars-app?retryWrites=true&w=majority';
 
