@@ -6,8 +6,9 @@ A simple web app that visulize Car data
 - HTML5
 - CSS3
 - JavaScript
-- Car API(_unoficial)
+- Car API
 - MongoDB
+- Heroku
 
 ## Wireframe/Screenshots
 
